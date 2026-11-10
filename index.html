@@ -1,32 +1,127 @@
+
 <!DOCTYPE html>
-<html PT-BR>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>mini-play</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Player - Music</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
+
 <body>
     <header class="barra">
-            <div class="logo" >
-            <img src="assets.imagem/logo-ytmusic.svg" alt="logo da marca" width="30">
-             <h2>Music</h2>
-            <span class="on">ONLINE·CONTA PREMIUM</span>
-            </div>
-        </header>
-
-        <main>
-            <div class="caixa">
+        <div class="logo">
+            <img src="assets.imagem/logo-ytmusic.svg" alt="Logo Music">
+            <h2>Music</h2>
+        </div>
+        <span class="on">ONLINE·CONTA PREMIUM</span>
+    </header>
+    <main>
+        <section class="caixa">
             <article class="imagem">
-                <img src="assets.imagem/capa-player.svg" alt="logo da marca" >  
+                <img src="assets.imagem/capa-player.svg" alt="Capa do clipe">
+                <span class="hd">1080p HD</span>
+                <span class="musica">♫ MÚSICA • VÍDEO</span>
+                <span class="tempo">02:15 / 03:40</span>
+                <button class="curtir">♥ CURTIR</button>
             </article>
-            <div class="hd">
-                <h2>1080p HD</h2> 
-            </div>
-            <div>
-                <span class="musica">MÙSICA·VIDEO</span>
-            </div>
-            </div>
-        </main>
+
+            <section class="informacoes">
+                <h3>MIDNIGHT DRIVE (CLIPE OFICIAL)</h3>
+                <p>Retro Cyberwave • Álbum: Neon Horizon • 1.4M visualizações</p>
+                <div class="progresso">
+                    <div class="progresso-atual"></div>
+                </div>
+
+                <div class="controles">
+                    <button>
+                        <span class="material-symbols-outlined">shuffle</span>
+                    </button>
+                    <button>
+                        <span class="material-symbols-outlined">skip_previous</span>
+                    </button>
+                    <button class="play">
+                        <span class="material-symbols-outlined">pause</span>
+                    </button>
+                    <button>
+                        <span class="material-symbols-outlined">skip_next</span>
+                    </button>
+                    <button>
+                        <span class="material-symbols-outlined">repeat</span>
+                    </button>
+                </div>
+            </section>
+        </section>
+
+        <section class="fila">
+            <h3>A SEGUIR • FILA DE REPRODUÇÃO</h3>
+            <p class="descricao">
+                Role a tela para baixo para navegar pela fila e testar o cabeçalho sticky e o miniplayer fixo.
+            </p>
+            <article class="musica-item">
+                <span class="numero">01</span>
+                <div class="detalhes">
+                    <strong>Neon Lights Horizon</strong>
+                    <p>Retro Cyberwave • 03:52</p>
+                </div>
+                <button>TOCAR</button>
+            </article>
+
+            <article class="musica-item">
+                <span class="numero">02</span>
+                <div class="detalhes">
+                    <strong>Synthwave Nights</strong>
+                    <p>Sunset Dreamers • 04:10</p>
+                </div>
+                <button>TOCAR</button>
+            </article>
+
+            <article class="musica-item">
+                <span class="numero">03</span>
+                <div class="detalhes">
+                    <strong>Midnight Highway Cruise</strong>
+                    <p>Voltage Pulse • 03:28</p>
+                </div>
+                <button>TOCAR</button>
+            </article>
+
+            <article class="musica-item">
+                <span class="numero">04</span>
+                <div class="detalhes">
+                    <strong>Cyber City Rain</strong>
+                    <p>Lo-Fi Neon • 02:45</p>
+                </div>
+                <button>TOCAR</button>
+            </article>
+
+            <article class="musica-item">
+                <span class="numero">05</span>
+                <div class="detalhes">
+                    <strong>After Hours Drive</strong>
+                    <p>The Velocity Squad • 04:30</p>
+                </div>
+                <button>TOCAR</button>
+            </article>
+        </section>
+    </main>
+    <aside class="miniplayer">
+
+        <div class="mini-imagem">
+            <img src="assets/imagem/capa-player.svg" alt="Capa da música">
+        </div>
+
+        <div class="mini-info">
+            <span>MINIPLAYER YT</span>
+            <strong>Midnight Drive</strong>
+            <p>Retro Cyberwave</p>
+        </div>
+
+        <button>
+            <span class="material-symbols-outlined">pause</span>
+        </button>
+
+    </aside>
+
 </body>
 </html>
